@@ -1,0 +1,2 @@
+# udev by junior
+KERNEL=="sd?1", ACTION=="add", SUBSYSTEMS=="usb", ATTRS{serial}=="11111", RUN+="/bin/su root -c '/scripts/run.sh %k'"
